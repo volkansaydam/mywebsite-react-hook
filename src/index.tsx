@@ -6,6 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./font.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "./boxicons/css/boxicons.css";
 import "./portfolio.css";
 
 const container = document.getElementById("root")!;
