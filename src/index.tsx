@@ -8,6 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 import "./font.css";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./boxicons/css/boxicons.css";
 import "./portfolio.css";
 
