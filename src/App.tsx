@@ -5,6 +5,7 @@ import Header from "./features/header/Header";
 import BackToTopButton from "./features/BackToTopButton";
 import MobileToggleButton from "./features/MobileToggleButton";
 import Home from "./features/Home";
+import Skill from "./features/Skill";
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
 
       <main id="main">
         <About />
+        <Skill />
       </main>
 
       <BackToTopButton />
