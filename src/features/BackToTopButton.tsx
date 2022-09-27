@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const BackToTopButton = () => {
   const [active, setActive] = useState("");
+
   useEffect(() => {
     const toggleBackToTop = () => {
       if (window.scrollY > 100) {
@@ -18,12 +19,21 @@ const BackToTopButton = () => {
     };
   }, []);
 
+  const handleClick = (evt: React.MouseEvent) => {
+    evt.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <a
-      href="#"
+      href="/#"
       className={
         "back-to-top d-flex align-items-center justify-content-center " + active
       }
+      onClick={(evt) => handleClick(evt)}
     >
       <i className="bi bi-arrow-up-short"></i>
     </a>
