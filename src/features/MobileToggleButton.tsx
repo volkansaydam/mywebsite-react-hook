@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useAppSelector } from "../app/hooks";
 
 const MobileToggleButton = () => {
+  const currentMenu = useAppSelector((state) => state.navbar.currentMenu);
+
   const [icon, setIcon] = useState("list");
 
   const handleClick = () => {
@@ -11,6 +14,13 @@ const MobileToggleButton = () => {
     }
     document.querySelector("body")?.classList.toggle("mobile-nav-active");
   };
+
+  useEffect(() => {
+    if (icon !== "list") {
+      setIcon("list");
+      document.querySelector("body")?.classList.remove("mobile-nav-active");
+    }
+  }, [currentMenu]);
 
   return (
     <i

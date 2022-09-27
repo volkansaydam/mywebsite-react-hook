@@ -15,16 +15,12 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage/session";
-import counterReducer from "../features/counter/counterSlice";
-
-const rootReducer = combineReducers({
-  counter: counterReducer,
-});
+import { rootReducer } from "./rootReducer";
 
 const persistConfig = {
   key: "root",
   storage: storage,
-  whitelist: [],
+  whitelist: ["navbar"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
