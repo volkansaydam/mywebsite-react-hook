@@ -6,6 +6,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./font.css";
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./boxicons/css/boxicons.css";
 import "./portfolio.css";

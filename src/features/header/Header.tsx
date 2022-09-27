@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import Profile from "./Profile";
 
-function Header() {
+const Header = () => {
   return (
     <header id="header">
       <div className="d-flex flex-column">
@@ -10,6 +10,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

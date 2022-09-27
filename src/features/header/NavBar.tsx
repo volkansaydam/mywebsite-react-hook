@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function NavBar() {
+const NavBar = () => {
   const [active, setActive] = useState<string>("#hero");
 
   useEffect(() => {
@@ -73,6 +73,6 @@ function NavBar() {
       </ul>
     </nav>
   );
-}
+};
 
 export default NavBar;

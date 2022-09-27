@@ -1,6 +1,13 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import About from "./features/about/About";
 import Header from "./features/header/Header";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Header />
@@ -16,16 +23,10 @@ function App() {
       </section>
 
       <main id="main">
-        <section id="about" className="about">
-          <div className="container">
-            <div className="section-title">
-              <h2>About</h2>
-            </div>
-          </div>
-        </section>
+        <About />
       </main>
     </>
   );
-}
+};
 
 export default App;

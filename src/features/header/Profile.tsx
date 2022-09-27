@@ -1,6 +1,6 @@
 import img from "./img-1.jpg";
 
-function Profile() {
+const Profile = () => {
   return (
     <div className="profile">
       <img src={img} alt="" className="img-fluid rounded-circle" />
@@ -18,6 +18,6 @@ function Profile() {
       </div>
     </div>
   );
-}
+};
 
 export default Profile;
