@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function NavBar() {
-  const [active, setActive] = useState<string>("hero");
+  const [active, setActive] = useState<string>("#hero");
 
   const createClassName = (name: string): string => {
     const navLink = "nav-link";
