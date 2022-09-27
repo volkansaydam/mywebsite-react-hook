@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import About from "./features/about/About";
+import About from "./features/About";
 import Header from "./features/header/Header";
+import BackToTopButton from "./features/BackToTopButton";
+import MobileToggleButton from "./features/MobileToggleButton";
 
 const App = () => {
   useEffect(() => {
@@ -15,6 +17,8 @@ const App = () => {
 
   return (
     <>
+      <MobileToggleButton />
+
       <Header />
 
       <section
@@ -30,6 +34,8 @@ const App = () => {
       <main id="main">
         <About />
       </main>
+
+      <BackToTopButton />
     </>
   );
 };
