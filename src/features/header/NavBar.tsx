@@ -1,10 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function NavBar() {
   const [active, setActive] = useState<string>("#hero");
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY + 200;
+
+      const menuItems = document.querySelectorAll(
+        ".scrollto"
+      ) as NodeListOf<HTMLAnchorElement>;
+
+      menuItems.forEach((menuItem) => {
+        const section = document.querySelector(
+          menuItem.hash
+        ) as HTMLElement | null;
+        if (
+          section &&
+          position >= section.offsetTop &&
+          position <= section.offsetTop + section.offsetHeight
+        ) {
+          setActive(menuItem.hash);
+        }
+      });
+    };
+
+    handleScroll();
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const createClassName = (name: string): string => {
-    const navLink = "nav-link";
+    const navLink = "nav-link scrollto";
     const activeLink = navLink + " active";
     return active == name ? activeLink : navLink;
   };
