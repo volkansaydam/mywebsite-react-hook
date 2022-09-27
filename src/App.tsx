@@ -4,6 +4,7 @@ import About from "./features/About";
 import Header from "./features/header/Header";
 import BackToTopButton from "./features/BackToTopButton";
 import MobileToggleButton from "./features/MobileToggleButton";
+import Home from "./features/Home";
 
 const App = () => {
   useEffect(() => {
@@ -21,15 +22,7 @@ const App = () => {
 
       <Header />
 
-      <section
-        id="hero"
-        className="d-flex flex-column justify-content-center align-items-center"
-      >
-        <div className="hero-container">
-          <h1>Volkan Saydam</h1>
-          <p>I'm Web Developer</p>
-        </div>
-      </section>
+      <Home />
 
       <main id="main">
         <About />
