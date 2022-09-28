@@ -6,6 +6,7 @@ import BackToTopButton from "./features/BackToTopButton";
 import MobileToggleButton from "./features/MobileToggleButton";
 import Home from "./features/Home";
 import Skill from "./features/Skill";
+import Resume from "./features/Resume";
 
 const App = () => {
   useEffect(() => {
@@ -20,16 +21,13 @@ const App = () => {
   return (
     <>
       <MobileToggleButton />
-
       <Header />
-
       <Home />
-
       <main id="main">
         <About />
         <Skill />
+        <Resume />
       </main>
-
       <BackToTopButton />
     </>
   );
