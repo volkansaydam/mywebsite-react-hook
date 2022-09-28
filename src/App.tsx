@@ -7,6 +7,7 @@ import MobileToggleButton from "./features/MobileToggleButton";
 import Home from "./features/Home";
 import Skill from "./features/Skill";
 import Resume from "./features/Resume";
+import Portfolio from "./features/Portfolio";
 
 const App = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const App = () => {
         <About />
         <Skill />
         <Resume />
+        <Portfolio />
       </main>
       <BackToTopButton />
     </>
