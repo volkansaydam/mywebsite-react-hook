@@ -19,6 +19,7 @@ const Portfolio = () => {
     if (portfolioContainer.current) {
       portfolioIsotope.current = new Isotope(portfolioContainer.current, {
         itemSelector: ".portfolio-item",
+        layoutMode: "fitRows",
       });
     }
   }, []);
