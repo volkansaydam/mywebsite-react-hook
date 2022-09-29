@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import { MenuItems, MenuType } from "../../types/menu";
 import { setCurrentMenu } from "./navbarSlice";
@@ -6,30 +6,6 @@ import { setCurrentMenu } from "./navbarSlice";
 const NavBar = () => {
   const dispatch = useAppDispatch();
   const currentMenu = useAppSelector((state) => state.navbar.currentMenu);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY + 200;
-
-      Object.values(MenuItems).forEach((menuItem) => {
-        const section = document.querySelector(menuItem) as HTMLElement | null;
-        if (
-          section &&
-          position >= section.offsetTop &&
-          position <= section.offsetTop + section.offsetHeight
-        ) {
-          dispatch(setCurrentMenu(menuItem));
-        }
-      });
-    };
-
-    handleScroll();
-    document.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const createClassName = (menu: MenuType): string => {
     const navLink = "nav-link";
@@ -75,6 +51,15 @@ const NavBar = () => {
             onClick={(event) => handleClick(MenuItems.RESUME, event)}
           >
             <i className="bx bx-file-blank"></i> <span>Resume</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href={MenuItems.PORTFOLIO}
+            className={createClassName(MenuItems.PORTFOLIO)}
+            onClick={(event) => handleClick(MenuItems.PORTFOLIO, event)}
+          >
+            <i className="bx bx-book-content"></i> <span>Portfolio</span>
           </a>
         </li>
       </ul>
