@@ -62,6 +62,15 @@ const NavBar = () => {
             <i className="bx bx-book-content"></i> <span>Portfolio</span>
           </a>
         </li>
+        <li>
+          <a
+            href={MenuItems.CONTACT}
+            className={createClassName(MenuItems.CONTACT)}
+            onClick={(event) => handleClick(MenuItems.CONTACT, event)}
+          >
+            <i className="bx bx-envelope"></i> <span>Contact</span>
+          </a>
+        </li>
       </ul>
     </nav>
   );

@@ -11,6 +11,7 @@ import Portfolio from "./features/Portfolio";
 import { MenuItems } from "./features/types/menu";
 import { setCurrentMenu } from "./features/header/navbar/navbarSlice";
 import { useAppDispatch } from "./app/hooks";
+import Contact from "./features/Contact";
 
 const App = () => {
   const dispatch = useAppDispatch();
@@ -59,6 +60,7 @@ const App = () => {
         <Skill />
         <Resume />
         <Portfolio />
+        <Contact />
       </main>
       <BackToTopButton />
     </>
