@@ -8,7 +8,7 @@ const Home = () => {
     let typed: Typed | null = null;
     if (typedSpan.current) {
       typed = new Typed(typedSpan.current, {
-        strings: ["Web Developer", "Gamer", "Swimmer"],
+        strings: ["Web Developer", "Researcher", "Gamer"],
         loop: true,
         typeSpeed: 100,
         backSpeed: 50,

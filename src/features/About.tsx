@@ -22,10 +22,11 @@ const About = () => {
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Full-Stack Web Developer</h3>
             <p className="fst-italic">
-              I am a senior full-stack web developer. I have 8 years of
-              experience on this field. Lately i am working on react/spring-boot
-              projects as a full-stack developer. In my free time i like to
-              swimming and play video games.
+              In my free time i like to swimming, traveling and playing video
+              games. Especially turn-base games which allow me to plan the best
+              way to overcome the obstacle in front of me without time limit. I
+              am a curious person and i like to research lots of topics which
+              mostly related to my profession
             </p>
             <div className="row">
               <div className="col-lg-6">
@@ -69,12 +70,6 @@ const About = () => {
                   </li>
                 </ul>
               </div>
-              <p>
-                I am not a web designer or database administrator. Because of
-                this my knowledge on CSS or SQL is limited. Generally i use css
-                templates like bootstrap, ant design and database libraries like
-                hibernate, doctrine.
-              </p>
             </div>
           </div>
         </div>

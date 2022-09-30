@@ -20,6 +20,14 @@ const Resume = () => {
                   react/spring-boot projects as a full-stack developer.
                 </em>
               </p>
+              <p>
+                <em>
+                  I am not a web designer or database administrator. Because of
+                  this my knowledge on CSS or SQL is limited. Generally i use
+                  css templates like bootstrap, ant design and database
+                  libraries like hibernate, doctrine.
+                </em>
+              </p>
               <ul>
                 <li>Turkey, Ankara</li>
                 <li>+905399804920</li>
@@ -44,6 +52,13 @@ const Resume = () => {
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Professional Experience</h3>
+            <div className="resume-item">
+              <h4>Chief Technology Officer</h4>
+              <h5>2022 - 2022</h5>
+              <p>
+                <em>Seer AI &amp; Analytics</em>
+              </p>
+            </div>
             <div className="resume-item">
               <h4>Senior Full-Stack Web Developer</h4>
               <h5>2021 - 2022</h5>

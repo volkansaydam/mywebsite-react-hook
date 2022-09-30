@@ -60,7 +60,9 @@ const Portfolio = () => {
                 className={createActiveClass(FILTERS.REACT_SPRING)}
                 onClick={() => handleClick(FILTERS.REACT_SPRING)}
               >
-                React-Spring
+                React &amp;
+                <br />
+                Spring
               </li>
               <li
                 className={createActiveClass(FILTERS.KOTLIN)}
