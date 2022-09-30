@@ -27,9 +27,9 @@ const Skill = () => {
         <div className="section-title">
           <h2>Skills</h2>
           <p>
-            This section shows the skills i have used for the past few years.
+            This section shows the skills I have used for the past few years.
             Frameworks provide rapid development with ready to use libraries. As
-            you can see i started to forget native languages because of the
+            you can see, I started to forget native languages because of the
             frameworks.
           </p>
         </div>

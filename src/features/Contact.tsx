@@ -12,7 +12,7 @@ const Contact = () => {
           <h2>Contact</h2>
           <p>
             I am looking for a full remote job on a company which is not in
-            Turkey. You can contact me from form below via email.
+            Turkey. You can contact me from the form below via email.
           </p>
         </div>
         <div className="row" data-aos="fade-in">

@@ -16,16 +16,16 @@ const Resume = () => {
               <p>
                 <em>
                   I am a senior full-stack web developer. I have 8 years of
-                  experience on this field. Lately i am working on
-                  react/spring-boot projects as a full-stack developer.
+                  experience on this field. Lately, I am working on
+                  React/Spring-Boot projects as a full-stack developer.
                 </em>
               </p>
               <p>
                 <em>
                   I am not a web designer or database administrator. Because of
-                  this my knowledge on CSS or SQL is limited. Generally i use
-                  css templates like bootstrap, ant design and database
-                  libraries like hibernate, doctrine.
+                  this, my knowledge on CSS or SQL is limited. Generally I use
+                  CSS templates like Bootstrap, Ant Design and database
+                  libraries like Hibernate, Doctrine.
                 </em>
               </p>
               <ul>
