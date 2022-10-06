@@ -5,6 +5,7 @@ import { store, persistor } from "./app/store";
 import { PersistGate } from "redux-persist/integration/react";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { analytics } from "./app/firebase";
 import "./font.css";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
