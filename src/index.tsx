@@ -5,7 +5,8 @@ import { store, persistor } from "./app/store";
 import { PersistGate } from "redux-persist/integration/react";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { analytics } from "./app/firebase";
+import { app } from "./app/firebase";
+import { getAnalytics, logEvent } from "firebase/analytics";
 import "./font.css";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -13,6 +14,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "./boxicons/css/boxicons.css";
 import "./portfolio.css";
 
+const analytics = getAnalytics(app);
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 
@@ -25,6 +27,8 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
+
+logEvent(analytics, "notification_received");
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
