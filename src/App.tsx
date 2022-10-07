@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { app } from "./app/firebase";
+import { getAnalytics } from "firebase/analytics";
+import { logEvent } from "firebase/analytics";
 import AOS from "aos";
 import About from "./features/About";
 import Header from "./features/header/Header";
@@ -17,14 +20,16 @@ const App = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
+    if (process.env.NODE_ENV === "production") {
+      const analytics = getAnalytics(app);
+      logEvent(analytics, "notification_received");
+    }
+
     const handleScroll = () => {
       const position = window.scrollY + 200;
 
       Object.values(MenuItems).forEach((menuItem) => {
-        console.log(menuItem);
         const section = document.querySelector(menuItem) as HTMLElement | null;
-        console.log(position);
-        if (section) console.log(section.offsetTop);
         if (
           section &&
           position >= section.offsetTop &&
