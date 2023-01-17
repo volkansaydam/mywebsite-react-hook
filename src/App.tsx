@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { app } from "./app/firebase";
-import { getAnalytics } from "firebase/analytics";
-import { logEvent } from "firebase/analytics";
+import { getAnalytics, logEvent } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 import AOS from "aos";
 import About from "./features/About";
 import Header from "./features/header/Header";
@@ -24,6 +24,8 @@ const App = () => {
       const analytics = getAnalytics(app);
       logEvent(analytics, "notification_received");
     }
+
+    const auth = getAuth(app);
 
     const handleScroll = () => {
       const position = window.scrollY + 200;
