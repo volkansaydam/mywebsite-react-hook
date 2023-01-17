@@ -31,7 +31,7 @@ const Home = () => {
       <div className="hero-container">
         <h1>Volkan Saydam</h1>
         <p>
-          I'm <span ref={typedSpan}></span>
+          I'm a <span ref={typedSpan}></span>
         </p>
       </div>
     </section>
