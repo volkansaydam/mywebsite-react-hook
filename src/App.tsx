@@ -28,7 +28,7 @@ const App = () => {
     const auth = getAuth(app);
 
     const handleScroll = () => {
-      const position = window.scrollY + 200;
+      const position = window.scrollY + 300;
 
       Object.values(MenuItems).forEach((menuItem) => {
         const section = document.querySelector(menuItem) as HTMLElement | null;

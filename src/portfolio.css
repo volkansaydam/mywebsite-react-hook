@@ -893,19 +893,14 @@ section {
 .contact .info .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #333;
-  color: #fff;
   line-height: 1;
-  padding: 8px 0;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
   transition: 0.3s;
   margin-right: 10px;
 }
 
-.contact .info .social-links a:hover {
+.contact .info .social-links i:hover {
   background: #149ddd;
   color: #fff;
 }

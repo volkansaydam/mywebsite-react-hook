@@ -12,12 +12,12 @@ const Profile = () => {
         <a href="https://github.com/volkansaydam" target={"_blank"}>
           <i className="bx bxl-github"></i>
         </a>
-        <a
+        {/* <a
           href="https://stackoverflow.com/users/20102738/volkan-saydam"
           target={"_blank"}
         >
           <i className="bx bxl-stack-overflow"></i>
-        </a>
+        </a> */}
       </div>
     </div>
   );
